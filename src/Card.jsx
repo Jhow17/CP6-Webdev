@@ -5,7 +5,7 @@ import { useRef, useEffect, useState } from 'react';
 export default function Card({ id, imgid, isOpen, onClick }) {
 
     function click() {
-        onClick({ id, imgid })
+        onClick({ id, imgid, isOpen })
     }
 
     return (
