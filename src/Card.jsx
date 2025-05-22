@@ -1,6 +1,5 @@
 import { Icon } from '@iconify/react/dist/iconify.js';
-import { animate } from 'animejs';
-import { useRef, useEffect, useState } from 'react';
+
 
 export default function Card({ id, imgid, isOpen, onClick }) {
 
@@ -14,7 +13,7 @@ export default function Card({ id, imgid, isOpen, onClick }) {
                 {
                     isOpen ?
                         <div onClick={click} className="top-0 border rounded bg-gray-300">
-                            <img src={`https://picsum.photos/id/${imgid}/200/200`} className="rounded w-26 h-26" alt="" />
+                            <img src={`https://cdn.nba.com/headshots/nba/latest/260x190/${imgid}.png`} className="rounded w-26 h-26" alt="" />
                         </div>
                         :
                         <div onClick={click} className="absolute flex items-center justify-center top-0 w-full h-full border rounded bg-gray-300">
